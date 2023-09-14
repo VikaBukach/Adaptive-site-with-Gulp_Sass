@@ -1,0 +1,16 @@
+//підключення файлів:
+
+//****************import
+
+//****************mixins:
+@import "_mixins/general";
+
+//****************global:
+@import "global/base";
+@import "global/fonts";
+@import "global/variables";
+
+//****************other
+//****************block:
+@import "block/header";
+@import "block/footer";

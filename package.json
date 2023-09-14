@@ -1,0 +1,31 @@
+{
+  "name": "hw2---gulp-scss",
+  "version": "1.0.0",
+  "description": "Site layout using three layouts: 320px, 768px and 1200px, using the SCSS preprocessor and sampling the project using the Gulp task manager.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/bukachviko/hw-2-gulp-scss.git"
+  },
+  "author": "Victoria Bukach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/bukachviko/hw-2-gulp-scss/issues"
+  },
+  "homepage": "https://gitlab.com/bukachviko/hw-2-gulp-scss#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.67.0"
+  },
+  "type": "module"
+}
