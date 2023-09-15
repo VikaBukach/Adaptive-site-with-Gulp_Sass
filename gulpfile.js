@@ -1,4 +1,4 @@
-import gulp from "gulp"; // новий синтаксис E6 модуль
+import gulp from "gulp";
 
 import concat from "gulp-concat";
 import minify  from "gulp-minify";
