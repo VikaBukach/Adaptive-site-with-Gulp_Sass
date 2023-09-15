@@ -27,5 +27,8 @@
     "gulp-sass": "^5.1.0",
     "sass": "^1.67.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }
