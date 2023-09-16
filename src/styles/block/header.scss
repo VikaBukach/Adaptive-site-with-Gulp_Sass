@@ -4,11 +4,18 @@
 }
 
 .nav {
+  display: flex;
+  justify-content: flex-end;
 
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .menu__btn {
-  //transform: translateX(800%);
   width: 30px;
   height: 30px;
   position: relative;
@@ -61,19 +68,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-right: 100px;
-    margin-left: 100px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    min-width: max-content;
     height: auto;
     background-color: transparent;
-
 }
 }
 
 .menu.active {
-  transform: translateX(0);
+  transform: translate(6px, 30px);
 }
 
   .menu__item {
@@ -84,7 +88,6 @@
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 1.1px;
-
   }
 
   .menu__item--link {
@@ -112,7 +115,8 @@
 
 .header__img {
   width: 100%;
- margin-bottom: 38px;
+  min-height: 100%;
+  margin-bottom: 40px;
 }
 
 

@@ -8,6 +8,10 @@
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
+
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    font-size: 16px;
+  }
 }
 
 .resent-posts__list {
@@ -17,6 +21,23 @@
 
 .resent-posts__list-item {
   margin-top: 28px;
+
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    display: flex;
+  }
+}
+
+.resent-posts__list-item--add,
+.item__text {
+  @media screen and (max-width: $ui-breakpoint-md) {
+    display: none;
+  }
+}
+
+.item__container {
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    margin-left: 20px;
+  }
 }
 
 .item--subtitle {
@@ -24,6 +45,10 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 30px;
+
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    font-size: 16px;
+  }
 }
 
 .item--desc {
@@ -31,6 +56,20 @@
   font-size: 11px;
   font-weight: 400;
   line-height: 20px;
+
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    font-size: 12px;
+    padding-bottom: 13px;
+  }
+}
+
+.item__text {
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    color: #5C5C5C;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
 }
 
 .instagram-shot {
@@ -40,7 +79,6 @@
 
 .instagram-shot--title {
   color: #4E4E4E;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
