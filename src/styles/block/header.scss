@@ -1,13 +1,15 @@
 .header__content {
   margin-top: 25px;
-  margin-right: 25px;
   display: flex;
   justify-content: flex-end;
+}
 
+.nav {
+  margin-bottom: 25px;
 }
 
 .menu__btn {
-  width: 30px;  //розмір кнопки
+  width: 30px;
   height: 30px;
   position: relative;
   border-radius: 1px;
@@ -15,7 +17,6 @@
   border: none;
   &::after{
     content: "";
-
   }
 }
 
@@ -44,6 +45,9 @@
   right: 25px;
   width: 182px;
   height: 208px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
   background-color: #F5F5F5;
   z-index: 2;
   transform: translateX(120%);
@@ -52,7 +56,6 @@
 .menu.active {
   transform: translateX(0);
 }
-
 
   .menu__item {
     list-style-type: none;
@@ -65,18 +68,14 @@
 
   }
 
-    .menu__item:hover {
-      background-color: #DBDBDB;
-    }
-
   .menu__item--link {
     text-decoration: none;
     color: black;
-}
 
-    //.menu__item--link:hover {
-    //  color: #57A4A4;
-    //}
+    &:hover {
+      color: #57A4A4;
+    }
+  }
 
   .menu__btn.active span:first-of-type {
     opacity: 0;
@@ -91,5 +90,10 @@
     top: (50%);
     transform: translate(-50%, -50%) rotate(-45deg);
   }
+
+.header__img {
+  width: 100%;
+ margin-bottom: 38px;
+}
 
 
