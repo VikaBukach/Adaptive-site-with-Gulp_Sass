@@ -17,6 +17,19 @@
 .resent-posts__list {
   margin-top: 23px;
   margin-bottom: 78px;
+
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
+    margin-top: 0px;
+    margin-bottom: 69px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 15px;
+  }
 }
 
 .resent-posts__list-item {
@@ -25,10 +38,17 @@
   @media screen and (min-width: $ui-breakpoint-md-min) {
     display: flex;
   }
+
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
+    margin-top: 0;
+  }
 }
 
 .resent-posts__list-item--add,
-.item__text {
+.item__text,
+.instagram-shot--subtitle,
+.shot--img--second,
+.shot--img--third {
   @media screen and (max-width: $ui-breakpoint-md) {
     display: none;
   }
@@ -77,16 +97,83 @@
 }
 
 
-.instagram-shot--title {
+.instagram-shot--title,
+.instagram-shot--subtitle {
   color: #4E4E4E;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
   padding-bottom: 13px;
+  line-height: 22px;
+
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    padding-bottom: 35px;
+    padding-top: 47px;
+  }
+
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
+    padding-bottom: 24px;
+  }
+
 }
 
-.shot--img {
+.instagram-shot__inner {
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
+
+.instagram-shot--subtitle{
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    font-size: 13px;
+  }
+}
+
+.shot__container {
+
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    background: #F5F5F5;
+  }
+
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
+    background: #F5F5F5;
+
+  }
+}
+
+.shot--img--fourth {
+  display: none;
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
+    display: block;
+  }
+}
+
+.page__img {
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 10px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 10px;
+    padding-bottom: 50px;
+  }
+}
+
+.shot__img {
   width: 100%;
-}
 
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    width: 100%;
+  }
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
+    width: 100%;
+  }
+}

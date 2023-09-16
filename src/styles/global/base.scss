@@ -56,23 +56,22 @@ body {
 
 .container {
   max-width: 100%;
-  padding: 0px 20px;
+  padding: 0 20px;
   margin: 0 auto;
 
   @media screen and (min-width: $ui-breakpoint-md-min) {
-    padding: 0px 80px;
+    padding: 0 80px;
   }
 
-
-  @media screen and ($ui-breakpoint-Xsm-min) {
+  @media screen and (min-width: $ui-breakpoint-Xsm-min) {
     max-width: 320px;
   }
 
-  @media screen and ($ui-breakpoint-md-min) {
+  @media screen and (min-width: $ui-breakpoint-md-min) {
     max-width: 767px;
 
   }
-  @media screen and ($ui-breakpoint-xl-min) {
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
     max-width: 1200px;
   }
 }
