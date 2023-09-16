@@ -1,14 +1,14 @@
 .header__content {
   margin-top: 25px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav {
   margin-bottom: 25px;
 }
 
+.nav {
+
+}
+
 .menu__btn {
+  //transform: translateX(800%);
   width: 30px;
   height: 30px;
   position: relative;
@@ -17,6 +17,9 @@
   border: none;
   &::after{
     content: "";
+  }
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    display: none;
   }
 }
 
@@ -29,7 +32,6 @@
   transform: translate(-50%, -50%);
   background-color: white;
   transition: 0.5ms;
-
 }
 
   .menu__btn span:nth-of-type(2) {
@@ -43,7 +45,7 @@
 .menu {
   position: fixed;
   right: 25px;
-  width: 182px;
+  min-width: 182px;
   height: 208px;
   display: flex;
   flex-direction: column;
@@ -51,6 +53,23 @@
   background-color: #F5F5F5;
   z-index: 2;
   transform: translateX(120%);
+
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    transform: none;
+    z-index: 0;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    height: auto;
+    background-color: transparent;
+
+}
 }
 
 .menu.active {
