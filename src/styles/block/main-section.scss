@@ -92,11 +92,6 @@
   }
 }
 
-.instagram-shot {
-  margin-bottom: 42px;
-}
-
-
 .instagram-shot--title,
 .instagram-shot--subtitle {
   color: #4E4E4E;
@@ -162,8 +157,8 @@
   @media screen and (min-width: $ui-breakpoint-xl-min) {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    column-gap: 10px;
-    padding-bottom: 50px;
+
+
   }
 }
 
