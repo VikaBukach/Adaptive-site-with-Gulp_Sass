@@ -6,11 +6,13 @@ import cleanCSS  from "gulp-clean-css";
 import clean  from "gulp-clean";
 import browserSync  from "browser-sync";
 import imagemin from "gulp-imagemin";
+import autoprefixer from "gulp-autoprefixer";
 
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 
 const sass = gulpSass(dartSass);
+
 
 const html =() => {
     return gulp.src("./src/*.html")
@@ -31,8 +33,9 @@ const js = () => {
 const css = () => {
     return gulp.src("./src/styles/*.scss")
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('styles.css'))
-        // .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(autoprefixer({overrideBrowserList: ['last 10 version']}))
+        .pipe(concat('styles.min.css'))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("./dist/styles"));
 }
 
