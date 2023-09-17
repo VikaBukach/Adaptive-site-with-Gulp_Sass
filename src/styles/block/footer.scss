@@ -33,10 +33,14 @@
 .footer__text {
   color: #B9B9B9;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
+    font-size: 12px;
+  }
 }
 
 .footer__text span {
