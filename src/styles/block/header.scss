@@ -8,10 +8,8 @@
   justify-content: flex-end;
 
   @media screen and (min-width: $ui-breakpoint-md-min) {
-    display: flex;
+    @include ui-flex;
     flex-direction: row;
-    justify-content: center;
-    text-align: center;
   }
 }
 
@@ -118,5 +116,3 @@
   min-height: 100%;
   margin-bottom: 40px;
 }
-
-

@@ -1,5 +1,7 @@
-@mixin ui-flex($jc: flex-start, $ai: flex-start) {
+@mixin ui-flex {
   display: flex;
-  justify-content: $jc;
-  align-items: $ai;
+  justify-content: center;
+  align-items: center;
 }
+
+//@include ui-flex;

@@ -3,7 +3,7 @@
 }
 
 .resent-posts--title {
-  color: #4E4E4E;
+  color: $ui-primary-color;
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
@@ -61,7 +61,7 @@
 }
 
 .item--subtitle {
-  color: #4E4E4E;
+  color: $ui-primary-color;
   font-size: 14px;
   font-weight: 700;
   line-height: 30px;
@@ -72,7 +72,7 @@
 }
 
 .item--desc {
-  color: #7C7C7C;
+  color: $ui-primary-color-subtitle;
   font-size: 11px;
   font-weight: 400;
   line-height: 20px;
@@ -110,7 +110,6 @@
   @media screen and (min-width: $ui-breakpoint-xl-min) {
     padding-bottom: 24px;
   }
-
 }
 
 .instagram-shot__inner {
@@ -157,8 +156,6 @@
   @media screen and (min-width: $ui-breakpoint-xl-min) {
     display: grid;
     grid-template-columns: repeat(4, auto);
-
-
   }
 }
 

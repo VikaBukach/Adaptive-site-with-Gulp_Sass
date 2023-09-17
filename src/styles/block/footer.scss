@@ -11,10 +11,10 @@
 .footer__inner {
   @media screen and (min-width: $ui-breakpoint-xl-min) {
     max-width: 684px;
-    text-align: center;
-    display: flex;
     flex-direction: column;
+    display: flex;
     justify-content: center;
+    text-align: center;
   }
 }
 
@@ -50,6 +50,10 @@
   margin-bottom: 25px;
 }
 
+.footer__icons img {
+    padding-right: 6px;
+  }
+
 .contacts {
   @media screen and (min-width: $ui-breakpoint-md-min) {
     display: flex;
@@ -80,6 +84,3 @@
 .contacts__email {
   margin-bottom: 47px;
 }
-
-
-
