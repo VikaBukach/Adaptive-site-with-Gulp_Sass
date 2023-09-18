@@ -6,12 +6,19 @@ $ui-hover-color: #57A4A4;
 
 
 //-------------------------------------
-//--------------- breakpoint ----------
+//--------------- breakpoints ----------
+
 $ui-breakpoint-xl: "1201px";
 $ui-breakpoint-xl-min: "1200px";
 
+$ui-breakpoint-lg: "1100px";
+$ui-breakpoint-lg-min: "992px";
+
 $ui-breakpoint-md: " 767px";
 $ui-breakpoint-md-min: "768px";
+
+$ui-breakpoint-sm: "576px";
+$ui-breakpoint-sm-min: "420px";
 
 $ui-breakpoint-Xsm: "320px";
 $ui-breakpoint-Xsm-min: "321px";

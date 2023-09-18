@@ -66,10 +66,18 @@ body {
     max-width: 320px;
   }
 
+  @media screen and (min-width: $ui-breakpoint-sm-min) {
+    max-width: 576px;
+  }
+
   @media screen and (min-width: $ui-breakpoint-md-min) {
     max-width: 767px;
-
   }
+
+  @media screen and (min-width: $ui-breakpoint-lg-min) {
+    max-width: 992px;
+  }
+
   @media screen and (min-width: $ui-breakpoint-xl-min) {
     max-width: 1200px;
   }

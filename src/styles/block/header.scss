@@ -1,3 +1,9 @@
+.header {
+  @media screen and (max-width: $ui-breakpoint-sm-min) {
+    width: 100%;
+  }
+}
+
 .header__content {
   margin-top: 25px;
   margin-bottom: 25px;

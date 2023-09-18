@@ -1,3 +1,4 @@
+
 .resent-posts {
   min-width: 232px;
 }
@@ -9,9 +10,18 @@
   line-height: 22px;
   text-transform: uppercase;
 
+  @media screen and (max-width: $ui-breakpoint-sm-min) {
+    font-size: 14px;
+  }
+
   @media screen and (min-width: $ui-breakpoint-md-min) {
     font-size: 16px;
   }
+
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
+    margin-bottom: 24px;
+  }
+
 }
 
 .resent-posts__list {
@@ -52,6 +62,21 @@
   @media screen and (max-width: $ui-breakpoint-md) {
     display: none;
   }
+}
+
+.item--img {
+  @media screen and (min-width: $ui-breakpoint-sm-min) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    width: 25%;
+  }
+
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
+    width: 50%;
+  }
+
 }
 
 .item__container {
@@ -165,7 +190,15 @@
   @media screen and (min-width: $ui-breakpoint-md-min) {
     width: 100%;
   }
+
+
+  @media screen and (min-width: $ui-breakpoint-lg-min) {
+    width: 100%;
+    height: 100%;
+  }
+
   @media screen and (min-width: $ui-breakpoint-xl-min) {
     width: 100%;
   }
 }
+
